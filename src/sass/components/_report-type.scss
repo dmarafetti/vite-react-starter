@@ -1,0 +1,52 @@
+.report-type__list {
+
+   margin-top: 25px;
+   margin-bottom: 0;
+
+   .list-group-item {
+
+       padding-left: 20px;
+
+       &::before {
+
+           content: "";
+           display: block;
+           background-color: $primary;
+           width: 4px;
+           height: 100%;
+           position: absolute;
+           top: 0;
+           left: 0;
+           opacity: 0;
+           transition: opacity 100ms ease;
+
+       }
+
+       &.selected::before {
+
+           opacity: 1;
+
+
+       }
+
+       &.selected.favorite::before {
+
+           background-color: $favorite_bg;
+       }
+
+
+       &.selected {
+
+           background-color: var(--lists-group-item-active-focus-background-color);
+
+       }
+
+
+       & > span {
+
+           margin-right: 10px;
+       }
+
+   }
+
+}
