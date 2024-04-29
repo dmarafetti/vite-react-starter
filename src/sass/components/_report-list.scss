@@ -1,9 +1,15 @@
-.panel-report-list {
+.report-list {
 
-    .panel-body {
+    table-layout: fixed;
 
-        min-height: 600px;
+    td, th {
 
+        @include text-truncate;
+
+        min-width: 50px;
+        position: relative;
+        vertical-align: middle;
     }
+
 
 }

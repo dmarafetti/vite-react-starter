@@ -14,5 +14,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Optionally, you can turn off the warning when `any` is used implicitly
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-implicit-any": "off"
   },
 }
